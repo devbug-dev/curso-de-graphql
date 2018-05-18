@@ -6,5 +6,10 @@ type Link{
     url:String!
     description:String! @deprecated(reason:"ya no se usa")
 }
+
+input newLink{
+    url:String!
+    description:String!
+}
 `;
 module.exports = LinkDef;

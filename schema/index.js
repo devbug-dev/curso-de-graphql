@@ -8,6 +8,10 @@ const rootQuery = `
 type Query {
     allLinks:[Link!]
 }
+
+type Mutation{
+  createLink(link:newLink):Link
+}
 `;
 
 module.exports = makeExecutableSchema({
